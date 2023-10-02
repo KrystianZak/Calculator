@@ -1,0 +1,20 @@
+﻿@model Calculator.Models.Calc;
+
+@{
+    ViewData["Title"] = "Calculator";
+}
+
+<p>Insert numbers into form, for calculate something.</p>
+
+<form action="Calculator">
+    
+    First number: <input type="number" asp-for="firstNumber" /> <br />
+
+    Second number: <input type="number" asp-for="secondNumber" /> <br />
+    
+    Sign: <input type="text" asp-for="sign" /> <br />
+
+    <input type="submit" />
+</form>
+
+@ViewBag.output
